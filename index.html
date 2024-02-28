@@ -9,111 +9,262 @@
     <title>Company Portfolio</title>
     <style>
         body {
-            font-family: 'Chakra Petch', sans-serif; /* Apply Orbitron font */
+            font-family: 'Chakra Petch', sans-serif;
             background-color: #FAFAFA;
-            color: #000; /* Set text color to black for contrast */
-            margin: 0; /* Removes default margin */
-            padding: 0; /* Removes default padding */
+            color: #000;
+            margin: 0;
+            padding: 0;
         }
         .header {
             padding: 20px;
             text-align: center;
-            background-color: #FAFAFA; /* Ensures header background is also white */
-            color: #000; /* Keeps text color black for visibility */
+            background-color: #FAFAFA;
+            color: #000;
         }
         .client {
-            display: flex; /* Enables flexbox layout */
-            align-items: center; /* Vertically centers the items in the flex container */
-            margin: 40px auto; /* Centers the client sections and maintains margin for spacing */
-            background-color: #ffffff; /* Sets client boxes to white */
+            display: flex;
+            align-items: center;
+            margin: 40px auto;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjusted shadow for subtle depth on a white background */
-            width: 80%; /* Sets a max width for client sections */
-            max-width: 800px; /* Maximum width to keep the layout manageable on large screens */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 800px;
+            position: relative;
         }
+
+        .client::after {
+            content: "";
+            position: absolute;
+            left: 140px;
+            top: 45px;
+            bottom: 35px;
+            width: .5px;
+            background-color: #a1a1a1;
+        }
+
         .client-logo {
-            width: 100px; /* Adjust based on the logo size */
-            margin-right: 20px; /* Adds space between the logo and the client details */
+            width: 100px;
+            margin-right: 20px;
         }
+
         .client-details {
-            /* If you need to specifically style client details, add styles here */
+            padding-left: 20px;
         }
+
         .client-list {
             list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
         .client-list li {
-            margin-bottom: 10px;
+            margin-bottom: 1px;
+        }
+        a {
+            color: black;
         }
     </style>    
 </head>
 <body>
     <div class="header">
-        <img src="img/modul8_logo.png" alt="modul8_logo" style="width:150px;"> <!-- Replace path_to_your_logo.png -->
+        <img src="img/modul8_logo.png" alt="modul8_logo" style="width:150px;">
         <h1>Modul8 Client Portfolio</h1>
         <p>Pioneering DevOps Solutions Tailored for Your Unique Business Needs</p>
-        <!-- Add more business details here -->
     </div>
 
     <div class="clients">
-        <!-- Client 1 -->
+        <!-- PV01 -->
         <div class="client">
-            <img src="img/credora_logo.png" alt="credora_logo" class="client-logo"> <!-- Replace path_to_client_1_logo.png -->
+            <img src="img/pv01_logo.png" alt="pv01_logo" class="client-logo">
             <div class="client-details">
-                <h2>Credora</h2>
-                <ul class="client-list">
-                    <li>- Infrastructure hosted on Azure and deployed with Terraform</li>
-                    <li>- Microservices packed with Docker and orchestrated by Kubernetes</li>
-                    <li>- Configuration automation and Kubernetes deployments with Ansible</li>
-                    <li>- Scripting in Python / Bash</li>
-                    <li>- CI/CD pipelines implemented with Jenkins / GitHub Actions</li>
-                    <li>- Data stored / backed up with TimescaleDB</li>
-                    <li>- Monitoring and alerting provided with Prometheus / Alertmanager / Grafana</li>
+                <a href="https://pv0.one"><h2>PV01</h2></a>
+                <p>PV01 is designed to underwrite and tokenize bonds and operate as a dealer by providing liquidity in those securities, all on public blockchains. 
+                The result will be a more efficient way for issuers to raise capital and investors to purchase high-quality debt, providing broader access to investment opportunities through tokenization. 
+                PV01’s model provides better visibility into ownership using smart contracts and a frictionless method of transferring debt.</p>
+                <h4>DevOps Tech stack:</h4>
+                <ul>
+                    <li>AWS</li>
+                    <li>Python</li>
+                    <li>Bash</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>Nginx</li>
+                    <li>Terraform</li>
+                    <li>Ansible</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>GitHub Actions</li>
+                    <li>Prometheus / Alertmanager / Grafana</li>
                 </ul>
             </div>
         </div>
+        <!-- Credora -->
         <div class="client">
-            <img src="img/pv01_logo.png" alt="pv01_logo" class="client-logo"> <!-- Replace path_to_client_1_logo.png -->
+            <img src="img/credora_logo.png" alt="credora_logo" class="client-logo">
             <div class="client-details">
-                <h2>PV01</h2>
-                <ul class="client-list">
-                    <li>- Infrastructure hosted on AWS and deployed with Terraform</li>
-                    <li>- Microservices packed with Docker and orchestrated by Kubernetes</li>
-                    <li>- Configuration automation and Kubernetes deployments with Ansible</li>
-                    <li>- Scripting in Python / Bash</li>
-                    <li>- CI/CD pipelines implemented with GitHub Actions</li>
-                    <li>- Data stored / backed up with PostgreSQL</li>
-                    <li>- Monitoring and alerting provided with Prometheus / Alertmanager / Grafana</li>
+                <a href="https://credora.io"><h2>Credora</h2></a>
+                <p>Credora’s mission is to accelerate the growth of open access to private credit by making risk more transparent.
+                Credora leverages privacy-preserving technology to capture the most up-to-date creditworthiness information.</p>
+                <h4>DevOps Tech stack:</h4>
+                <ul>
+                    <li>Microsoft Azure</li>
+                    <li>Intel SGX</li>
+                    <li>Python</li>
+                    <li>Bash</li>
+                    <li>PostgreSQL + TimescaleDB</li>
+                    <li>Redis</li>
+                    <li>Nginx</li>
+                    <li>HAproxy</li>
+                    <li>Terraform</li>
+                    <li>Ansible</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Jenkins</li>
+                    <li>GitHub Actions</li>
+                    <li>ArgoCD</li>
+                    <li>Prometheus / Alertmanager / Grafana</li>
                 </ul>
             </div>
         </div>
+        <!-- Tolar -->
         <div class="client">
-            <img src="img/A1_red_logo.png" alt="A1_red_logo" class="client-logo"> <!-- Replace path_to_client_1_logo.png -->
+            <img src="img/tolar_logo.webp" alt="tolar_logo" class="client-logo">
             <div class="client-details">
-                <h2>A1 Croatia</h2>
-                <ul class="client-list">
-                    <li>RedHat Enterprise Linux</li>
-                        <ul>- installing, configuring and maintaining RHEL OS in enterprise enviroment</ul>
-                        <ul>- managing RHEL with RedHat Satallite</ul>
-                        <ul>- using Ansible configuration management tool for configuring systems, deploying software, and orchestrate more advanced IT tasks</ul>
+                <a href="https://tolar.io"><h2>Tolar HashNET</h2></a>
+                <p>Tolar is a community governed crypto-currency featuring scalable, fast, secure, and fair transactions.
+                It is running on a proprietary protocol named HashNET, which is a scalable, fast, secure, and fair decentralized- beyond blockchain project,
+                leveraging Distributed Ledger Technology (DLT) and consensus with ultra-fast throughput.</p>
+                <h4>DevOps Tech stack:</h4>
+                <ul>
+                    <li>Google Cloud</li>
+                    <li>Python</li>
+                    <li>Bash</li>
+                    <li>PostgreSQL</li>
+                    <li>Nginx</li>
+                    <li>Terraform</li>
+                    <li>Ansible</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>GitHub Actions</li>
+                    <li>Prometheus / Alertmanager / Grafana</li>
+                </ul>
+            </div>
+        </div>
+        <!-- TBTL -->
+        <div class="client">
+            <img src="img/tbtl_logo.webp" alt="tbtl_logo" class="client-logo">
+            <div class="client-details">
+                <a href="https://tbtl.com"><h2>TBTL</h2></a>
+                <p>Blockhouse boasts world-class scientific and engineering teams in both collective trust and trusted computing. It has leading scientists and teams implementing products based on TEEs (trusted execution environments), multi-party computation and blockchain, as well as a rapidly developing portfolio of IP in these areas.</p>
+                <h4>DevOps Tech stack:</h4>
+                <ul>
+                    <li>Microsoft Azure</li>
+                    <li>Python</li>
+                    <li>Bash</li>
+                    <li>MongoDB</li>
+                    <li>Nginx / Apache</li>
+                    <li>Elasticsearch / Logstash / Kibana</li>
+                    <li>Terraform</li>
+                    <li>Ansible</li>
+                    <li>Docker</li>
+                    <li>Packer</li>
+                    <li>Jenkins</li>
+                    <li>Prometheus / Alertmanager / Grafana</li>
+                </ul>
+            </div>
+        </div>
+        <!-- RealNetworks -->
+        <div class="client">
+            <img src="img/real_networks_logo.png" alt="real_networks_logo" class="client-logo">
+            <div class="client-details">
+                <a href="https://realnetworks.com"><h2>RealNetworks</h2></a>
+                <p>A pioneer in Internet streaming, now focusing on a range of products and services that leverage artificial intelligence, machine learning, and digital media technologies.
+                Members of modul8 worked on multiple projects, such as SAFR, Kontxt and RealTimes.
+                </p>
+                <h4>DevOps Tech stack:</h4>
+                <ul>
+                    <li>AWS</li>
+                    <li>Python</li>
+                    <li>Ruby</li>
+                    <li>Bash</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>Nginx / Apache</li>
+                    <li>GitLab CI</li>
+                    <li>Terraform</li>
+                    <li>Ansible</li>
+                    <li>Chef</li>
+                    <li>Capistrano</li>
+                    <li>Cobbler</li>
                     <li>VMware</li>
-                        <ul>- installing, configuring and maintaining VMware virtual infrastructure </ul>
-                        <ul>- automating tasks and routines with PowerCLI and vCenter API</ul>
-                    <li>Storage</li>
-                        <ul>- managing SAN storage environment</ul>
-                        <ul>- responsible for planning and execution of the storage installation</ul>
-                        <ul>- performing any host-level tasks need to access new storage</ul>
-                    <li>Amazon AWS</li>
-                        <ul>- installing, configuring and maintaining EC2 instances and S3 storage</ul>
-                    <li>Scripting</li>
-                        <ul>- Powershell/PowerCLI</ul>
-                        <ul>- Ruby On Rails</ul>
-                        <ul>- Bash</ul>
+                    <li>Elasticsearch / Logstash / Kibana</li>
+                    <li>Airflow / Kafka / Spark / Zookeper</li>
+                    <li>Docker</li>
+                    <li>Packer</li>
+                    <li>Jenkins</li>
+                    <li>Prometheus / Alertmanager / Grafana</li>
+                    <li>Munin</li>
+                    <li>Monit</li>
                 </ul>
             </div>
         </div>
-
-        <!-- Repeat for more clients as needed -->
+        <!-- Sedmi Odjel -->
+        <div class="client">
+            <img src="img/sedmi_odjel_logo.png" alt="sedmi_odjel_logo" class="client-logo">
+            <div class="client-details">
+                <a href="https://sedmiodjel.com"><h2>Sedmi Odjel</h2></a>
+                <p>Sedmi Odjel is an IT company based in Croatia, specializing in providing high-end IT services with a focus on cloud technology.
+                The company offers a range of modern IT services, including migration to the cloud, optimization of the cloud environment, and DevOps services.
+                Sedmi Odjel delivers these services using Amazon Web Services (AWS) or its own enterprise cloud solution, named "7o cloud".
+                The company aims to act as a technology partner to its clients, offering a high level of expertise and customer-oriented service</p>
+                <h4>DevOps Tech stack:</h4>
+                <ul>
+                    <li>AWS</li>
+                    <li>VMware</li>
+                    <li>oVirt</li>
+                    <li>Mikrotik</li>
+                    <li>Cambium</li>
+                    <li>Python</li>
+                    <li>Bash</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>InfluxDB</li>
+                    <li>Nginx / Apache</li>
+                    <li>Postfix</li>
+                    <li>Microsoft Active Directory</li>
+                    <li>FreeIPA</li>
+                    <li>Microsoft Exchange</li>
+                    <li>Elasticsearch / Logstash / Kibana</li>
+                    <li>Ansible</li>
+                    <li>Puppet</li>
+                    <li>Docker</li>
+                    <li>Packer</li>
+                    <li>Jenkins</li>
+                    <li>PRTG software</li>
+                </ul>
+            </div>
+        </div>
+        <!-- A1 -->
+        <div class="client">
+            <img src="img/A1_red_logo.png" alt="A1_red_logo" class="client-logo">
+            <div class="client-details">
+                <a href="https://a1.hr"><h2>A1 Croatia</h2></a>
+                <p>Leading provider of digital services and communications solutions in Central and Eastern Europe.</p>
+                <h4>DevOps Tech stack:</h4>
+                <ul>
+                    <li>AWS</li>
+                    <li>VMware</li>
+                    <li>RedHat Enterprise suite</li>
+                    <li>Powershell</li>
+                    <li>Bash</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Nginx / Apache</li>
+                    <li>Ansible</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
