@@ -16,11 +16,26 @@
             padding: 0;
         }
         .header {
+            display: flex; /* Apply flexbox layout */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
             padding: 20px;
-            text-align: center;
             background-color: #FAFAFA;
             color: #000;
+            text-align: center; /* Ensure text within the container is centered as well */
         }
+
+        .header-content {
+            display: flex; /* Apply flexbox layout */
+            align-items: center; /* Center items vertically */
+            justify-content: flex-start; /* Align items to the left for internal spacing */
+            text-align: left; /* Align text to the left within the content block */
+        }
+
+        .header-content > div {
+            padding-left: 20px; /* Add some spacing between the logo and the text */
+        }
+
         .client {
             display: flex;
             align-items: center;
@@ -68,10 +83,15 @@
 </head>
 <body>
     <div class="header">
-        <img src="img/modul8_logo.png" alt="modul8_logo" style="width:150px;">
-        <h1>Modul8 Client Portfolio</h1>
-        <p>Pioneering DevOps Solutions Tailored for Your Unique Business Needs</p>
+        <div class="header-content"> <!-- New container div for flexbox -->
+            <img src="img/modul8_logo.png" alt="modul8_logo" style="width:150px;">
+            <div>
+                <h1>Client Portfolio</h1>
+                <p>Pioneering DevOps Solutions Tailored for Your Unique Business Needs</p>
+            </div>
+        </div>
     </div>
+    
 
     <div class="clients">
         <!-- PV01 -->
