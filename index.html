@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <title>Company Portfolio</title>
+    <style>
+        body {
+            font-family: 'Chakra Petch', sans-serif; /* Apply Orbitron font */
+            background-color: #FAFAFA;
+            color: #000; /* Set text color to black for contrast */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: #FAFAFA; /* Ensures header background is also white */
+            color: #000; /* Keeps text color black for visibility */
+        }
+        .client {
+            display: flex; /* Enables flexbox layout */
+            align-items: center; /* Vertically centers the items in the flex container */
+            margin: 40px auto; /* Centers the client sections and maintains margin for spacing */
+            background-color: #ffffff; /* Sets client boxes to white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjusted shadow for subtle depth on a white background */
+            width: 80%; /* Sets a max width for client sections */
+            max-width: 800px; /* Maximum width to keep the layout manageable on large screens */
+        }
+        .client-logo {
+            width: 100px; /* Adjust based on the logo size */
+            margin-right: 20px; /* Adds space between the logo and the client details */
+        }
+        .client-details {
+            /* If you need to specifically style client details, add styles here */
+        }
+        .client-list {
+            list-style-type: none;
+        }
+        .client-list li {
+            margin-bottom: 10px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="header">
+        <img src="img/modul8_logo.png" alt="modul8_logo" style="width:150px;"> <!-- Replace path_to_your_logo.png -->
+        <h1>Modul8 Client Portfolio</h1>
+        <p>Pioneering DevOps Solutions Tailored for Your Unique Business Needs</p>
+        <!-- Add more business details here -->
+    </div>
+
+    <div class="clients">
+        <!-- Client 1 -->
+        <div class="client">
+            <img src="img/credora_logo.png" alt="credora_logo" class="client-logo"> <!-- Replace path_to_client_1_logo.png -->
+            <div class="client-details">
+                <h2>Credora</h2>
+                <ul class="client-list">
+                    <li>- Infrastructure hosted on Azure and deployed with Terraform</li>
+                    <li>- Microservices packed with Docker and orchestrated by Kubernetes</li>
+                    <li>- Configuration automation and Kubernetes deployments with Ansible</li>
+                    <li>- Scripting in Python / Bash</li>
+                    <li>- CI/CD pipelines implemented with Jenkins / GitHub Actions</li>
+                    <li>- Data stored / backed up with TimescaleDB</li>
+                    <li>- Monitoring and alerting provided with Prometheus / Alertmanager / Grafana</li>
+                </ul>
+            </div>
+        </div>
+        <div class="client">
+            <img src="img/pv01_logo.png" alt="pv01_logo" class="client-logo"> <!-- Replace path_to_client_1_logo.png -->
+            <div class="client-details">
+                <h2>PV01</h2>
+                <ul class="client-list">
+                    <li>- Infrastructure hosted on AWS and deployed with Terraform</li>
+                    <li>- Microservices packed with Docker and orchestrated by Kubernetes</li>
+                    <li>- Configuration automation and Kubernetes deployments with Ansible</li>
+                    <li>- Scripting in Python / Bash</li>
+                    <li>- CI/CD pipelines implemented with GitHub Actions</li>
+                    <li>- Data stored / backed up with PostgreSQL</li>
+                    <li>- Monitoring and alerting provided with Prometheus / Alertmanager / Grafana</li>
+                </ul>
+            </div>
+        </div>
+        <div class="client">
+            <img src="img/A1_red_logo.png" alt="A1_red_logo" class="client-logo"> <!-- Replace path_to_client_1_logo.png -->
+            <div class="client-details">
+                <h2>A1 Croatia</h2>
+                <ul class="client-list">
+                    <li>RedHat Enterprise Linux</li>
+                        <ul>- installing, configuring and maintaining RHEL OS in enterprise enviroment</ul>
+                        <ul>- managing RHEL with RedHat Satallite</ul>
+                        <ul>- using Ansible configuration management tool for configuring systems, deploying software, and orchestrate more advanced IT tasks</ul>
+                    <li>VMware</li>
+                        <ul>- installing, configuring and maintaining VMware virtual infrastructure </ul>
+                        <ul>- automating tasks and routines with PowerCLI and vCenter API</ul>
+                    <li>Storage</li>
+                        <ul>- managing SAN storage environment</ul>
+                        <ul>- responsible for planning and execution of the storage installation</ul>
+                        <ul>- performing any host-level tasks need to access new storage</ul>
+                    <li>Amazon AWS</li>
+                        <ul>- installing, configuring and maintaining EC2 instances and S3 storage</ul>
+                    <li>Scripting</li>
+                        <ul>- Powershell/PowerCLI</ul>
+                        <ul>- Ruby On Rails</ul>
+                        <ul>- Bash</ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Repeat for more clients as needed -->
+    </div>
+</body>
+</html>
